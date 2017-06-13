@@ -1,0 +1,39 @@
+digraph G {
+  "Mortuary Evidence" -> "Tomb";
+  "Tomb" -> "Rock Cut Tomb";
+"Tomb"-> "Tomb Owner"
+	"Tomb Owner" [shape=Mdiamond];
+ 
+"Rock Cut Tomb" -> "Superstructure";
+"Rock Cut Tomb" -> "Substructure";
+"Superstructure" -> "Causeway";  
+"Superstructure" -> "Courtyard";  
+"Superstructure" -> "Portico";  
+"Superstructure" -> "Chapel";  
+"Superstructure" -> "Shrine";
+"Superstructure" -> "Serdab";
+"Substructure" -> "Shaft";
+"Substructure" -> "Burial Chamber";
+"Wall" -> "Surface"
+"Ceiling" -> "Surface"
+"Column" -> "Surface"
+"Floor" -> "Surface"
+"Surface" -> "Painted";
+"Surface" -> "Inscribed";
+"Surface" -> "Carved";
+"Chapel" -> "Wall";
+"Chapel" -> "Ceiling";
+"Chapel" -> "Column";
+"Chapel" -> "Floor";
+"Shrine" -> "Wall";
+"Shrine" -> "Ceiling";
+"Shrine" -> "Column";
+"Shrine" -> "Floor";
+ 
+subgraph cluster_Architectural_Feature {
+		label = "Architectural Feature";
+"Wall"
+"Ceiling"
+"Column"
+"Floor"
+}
